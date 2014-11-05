@@ -35,7 +35,7 @@ connection mysql_connection_info
   action :create
 end
 
-node.set_unless['redmine']['database']['password'] = secure_password
+#node.set_unless['redmine']['database']['password'] = secure_password
 
 mysql_database_user node['redmine']['database']['username'] do
   connection mysql_connection_info
